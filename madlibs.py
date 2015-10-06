@@ -40,13 +40,33 @@ def show_game_form():
 
 @app.route('/madlib')
 def show_madlib():
-    person_input = request.args.get("person")
-    color_input = request.args.get("color")
-    noun_input = request.args.get("noun")
-    adj_input = request.args.get("adjective")
+    noun1 = request.args.get("noun1")
+    noun2 = request.args.get("noun2")
+    noun3 = request.args.get("noun3")
+    plnoun1 = request.args.get("plnoun1")
+    plnoun2 = request.args.get("plnoun2")
+    plnoun3 = request.args.get("plnoun3")
+    plnoun4 = request.args.get("plnoun4")
+    adj1 = request.args.get("adj1")
+    adj2 = request.args.get("adj2")
+    adj3 = request.args.get("adj3")
+    verb1 = request.args.get("verb1")
+    verb2 = request.args.get("verb2")
+    verb3 = request.args.get("verb3")
 
-    return render_template("madlib.html", person=person_input,
-                           color=color_input, noun=noun_input, adjective=adj_input)
+    return render_template("madlib-shakes.html", noun1=noun1, noun2=noun2,
+                            noun3=noun3,
+                            plnoun1=plnoun1,
+                            plnoun2=plnoun2,
+                            plnoun3=plnoun3,
+                            plnoun4=plnoun4,
+                            adj1=adj1,
+                            adj2=adj2,
+                            adj3=adj3,
+                            verb1=verb1,
+                            verb2=verb2,
+                            verb3=verb3)
+
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads" our web app
