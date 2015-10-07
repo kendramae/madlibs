@@ -2,30 +2,44 @@
 <html>
 <head>
   <title>Madlib Funtimes</title>
+  <link href='https://fonts.googleapis.com/css?family=Almendra:400,700italic' rel='stylesheet'>
+  <link href="../static/madlibs.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Shakespeare Madlib: Hamlet Edition</h1>
-    <p>
-        To be, or not to be: that is the {{ noun1 }}:<br>
+    <div class="main">
+        <header class="classy">
+        <h1>Shakespeare Madlib:</h1>
+        <h2>Hamlet Edition</h2>
+        </header>
+
+        <article class="classy">
+        <p id="poem">To be, or not to be: that is the {{ noun1 }}:<br>
         Whether 'tis nobler in the {{ noun2 }} to suffer<br>
         The {{ plnoun1 }} and arrows of {{ adj1 }} fortune,<br>
         Or to take arms against a sea of {{ plnoun2 }},<br>
         And by opposing end them? To {{ verb1 }}: to sleep;<br>
         No more; and by a sleep to say we end<br>
-        The {{ noun3 }} and the thousand {{ adj2 }} {{ plnoun3 }}<br>
+        The {{ noun3 }} and the thousand {{ adj2 }} shocks<br>
         That flesh is heir to, 'tis a consummation<br>
         Devoutly to be wish'd. To {{ verb1 }}, to sleep;<br>
         To sleep: perchance to {{ verb2 }}: ay, there's the rub;<br>
-        For in that sleep of death what {{ plnoun4 }} may come<br>
+        For in that sleep of death what {{ plnoun3 }} may come<br>
         When we have shuffled off this {{ adj3 }} coil,<br>
-        Must {{ verb3 }} us pause.<br>
-    </p>
+        Must {{ verb3 }} us pause.<br></p>
+        </article>
 
+        <footer>
+            <form action="/game">
+                <label>Would you like to play again?<br><br>
+                <input type="submit" value="Aye"></label>
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
 
 <!-- VARIABLES BEING USED: 
 noun1, noun2, noun3
-plnoun1, plnoun2, plnoun3, plnoun4 
+plnoun1, plnoun2, plnoun3,
 adj1, adj2, adj3
 verb1, verb2, verb3 -->

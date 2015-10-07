@@ -8,12 +8,12 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # route to handle the landing page of a website.
-@app.route('/')
-def start_here():
-    return "Hi! This is the home page."
+# @app.route('/')
+# def start_here():
+#     return "Hi! This is the home page."
 
 # route to display a simple web page
-@app.route('/hello')
+@app.route('/')
 def say_hello():
     return render_template("hello.html")
 
@@ -46,7 +46,6 @@ def show_madlib():
     plnoun1 = request.args.get("plnoun1")
     plnoun2 = request.args.get("plnoun2")
     plnoun3 = request.args.get("plnoun3")
-    plnoun4 = request.args.get("plnoun4")
     adj1 = request.args.get("adj1")
     adj2 = request.args.get("adj2")
     adj3 = request.args.get("adj3")
@@ -59,7 +58,6 @@ def show_madlib():
                             plnoun1=plnoun1,
                             plnoun2=plnoun2,
                             plnoun3=plnoun3,
-                            plnoun4=plnoun4,
                             adj1=adj1,
                             adj2=adj2,
                             adj3=adj3,

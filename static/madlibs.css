@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-image: url("../static/homepagebackground.jpg");
+}
+
+header, footer {
+    background-color: #ccc;
+    padding: 13px 5px;
+}
+
+article {
+    border-top: 5px solid #887f8d;
+    padding: 15px 5px;
+    background-color: #eee;
+
+}
+
+.main {
+    border: 5px solid #887f8d;
+    width: 50%;
+    margin: 150px auto;
+}
+
+footer {
+    border-top: 5px solid #887f8d;
+}
+
+footer label {
+    display: inline;
+
+}
+label {
+    text-align: left;
+    display: inline-block;
+}
+
+#poem {
+    text-align: left;
+    display: inline-block;
+}
+
+.classy {
+    font-family: 'Almendra', serif;
+}

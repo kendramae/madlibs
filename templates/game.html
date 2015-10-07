@@ -2,33 +2,40 @@
 <html>
 <head>
   <title>A Game</title>
+  <link href="../static/madlibs.css" rel="stylesheet">
 </head>
 <body>
-    <form action="/madlib">
-        <label> Please Provide 3 Nouns (Singular): 
-            <input type="text" name="noun1" placeholder="e.g. wombat">
-            <input type="text" name="noun2">
-            <input type="text" name="noun3"></label>
-        <br><br>
-        <label> Please Provide 4 Plural Nouns: 
-            <input type="text" name="plnoun1" placeholder="e.g. wombats">
-            <input type="text" name="plnoun2">
-            <input type="text" name="plnoun3">
-            <input type="text" name="plnoun4"></label>
-        <br><br>
-        <label> Please Provide 3 Adjectives: 
-            <input type="text" name="adj1" placeholder="e.g. smelly">
-            <input type="text" name="adj2">
-            <input type="text" name="adj3">
-        </label>
-        <br><br>
-        <label> Please Provide 3 Verbs (Infinitive): 
-            <input type="text" name="verb1" placeholder="e.g. eat">
-            <input type="text" name="verb2" placeholder="e.g. eat">
-            <input type="text" name="verb3" placeholder="e.g. eat">
-        </label>
-        <br><br>
-        <input type="submit">
+    <div class="main">
+        <header>
+            <h2>Let's Play Madlibs!</h2>
+        </header>
+        <article>
+            <form action="/madlib">
+            <label> Please Provide 3 Nouns (Singular): <br><br>
+                <input type="text" name="noun1" placeholder="e.g. wombat">
+                <input type="text" name="noun2">
+                <input type="text" name="noun3"></label>
+            <br><br><br>
+            <label> Please Provide 3 Plural Nouns: <br><br>
+                <input type="text" name="plnoun1" placeholder="e.g. wombats">
+                <input type="text" name="plnoun2">
+                <input type="text" name="plnoun3"></label>
+            <br><br><br>
+            <label> Please Provide 3 Adjectives: <br><br>
+                <input type="text" name="adj1" placeholder="e.g. smelly">
+                <input type="text" name="adj2">
+                <input type="text" name="adj3">
+            </label>
+            <br><br><br>
+            <label> Please Provide 3 Verbs (Infinitive): <br><br>
+                <input type="text" name="verb1" placeholder="e.g. eat">
+                <input type="text" name="verb2">
+                <input type="text" name="verb3">
+            </label>
+            <br><br><br>
+            <input type="submit">
+        </article>
     </form>
+    </div>
 </body>
 </html>
